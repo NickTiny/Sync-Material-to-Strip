@@ -147,7 +147,7 @@ class SEQ_AS_PLANE_PT_link(bpy.types.Panel):
     bl_region_type = "WINDOW"
     bl_context = "material"
     bl_idname = "SEQ_AS_PLANE_PT_link"
-    bl_label = "Sync Material"
+    bl_label = "Sync Material to Strip"
 
     def draw(self, context):
         row = self.layout.row(align=True)
@@ -264,7 +264,6 @@ def register():
         type=bpy.types.Scene,
     )
     bpy.types.SEQUENCER_HT_header.append(header_mat_to_seq)
-    # bpy.types.EEVEE_MATERIAL_PT_context_material.append(header_mat_add_to_seq)
 
 
 def unregister():
@@ -274,4 +273,3 @@ def unregister():
     del bpy.types.WindowManager.auto_sync_materials_to_strips
     del bpy.types.WindowManager.output_scene
     bpy.types.SEQUENCER_HT_header.remove(header_mat_to_seq)
-    # bpy.types.EEVEE_MATERIAL_PT_context_material.remove(header_mat_add_to_seq)
