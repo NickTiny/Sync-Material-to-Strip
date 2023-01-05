@@ -254,11 +254,13 @@ def register():
     )
     bpy.app.handlers.depsgraph_update_post.append(update_materials_via_sequence)
     bpy.types.WindowManager.auto_sync_materials_to_strips = bpy.props.BoolProperty(
-        name="Auto Sync Material Strips", default=False
+        name="Auto Sync Material Strips",
+        default=False,
+        description="Sync all Material Strips to their given Materials",
     )
     bpy.types.WindowManager.output_scene = bpy.props.PointerProperty(
         name="Scene",
-        description="",
+        description="Create Strip within selected Scene",
         type=bpy.types.Scene,
     )
     bpy.types.SEQUENCER_HT_header.append(header_mat_to_seq)
