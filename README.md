@@ -25,4 +25,4 @@ Sync Material to Strip ONLY controls offsett/start frame of an image texture nod
 This addon does NOT Support any other strip features like time remapping or video settings.
 
 # Credits
-Video featured in demo video is from the Blender Foundation
+Video Material featured in demonstration provided by the [Blender Studio](https://studio.blender.org/)
