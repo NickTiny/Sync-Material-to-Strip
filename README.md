@@ -20,5 +20,8 @@ https://user-images.githubusercontent.com/86638335/210847033-a512959b-d3f6-4b9c-
 # Recommendations
 Install [Import Image as Planes](https://docs.blender.org/manual/en/latest/addons/import_export/images_as_planes.html) to movie files onto planes.
 
+# Limitations
+Sync Material to Strip ONLY controls offsett/start frame of an image texture node. 
+This addon does NOT Support any other strip features like time remapping or video settings.
 
 
