@@ -91,7 +91,7 @@ def syncronize_all_strips_to_image_nodes(sequence_editor: bpy.types.SequenceEdit
 class SEQ_AS_PLANE_OT_link(bpy.types.Operator):
     bl_idname = "seq_as_plane.link"
     bl_label = "Sync Material to New Strip"
-    bl_description = "TODO"
+    bl_description = "Create strip to syncroniz to this material's image texture node"
     bl_options = {"UNDO"}
 
     def invoke(self, context, event):
