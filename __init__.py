@@ -100,7 +100,6 @@ class SEQ_AS_PLANE_OT_link(bpy.types.Operator):
 
     def draw(self, context):
         col = self.layout.column(align=False)
-        col.prop(context.window_manager, "auto_sync_materials_to_strips")
         col.prop(context.window_manager, "output_scene")
 
     def execute(self, context):
@@ -151,7 +150,14 @@ class SEQ_AS_PLANE_PT_link(bpy.types.Panel):
     bl_label = "Sync Material"
 
     def draw(self, context):
-        self.layout.operator("seq_as_plane.link", icon="PLUS")
+        row = self.layout.row(align=True)
+        row.operator("seq_as_plane.link", icon="PLUS")
+        row.prop(
+            context.window_manager,
+            "auto_sync_materials_to_strips",
+            icon="UV_SYNC_SELECT",
+            text="",
+        )
 
 
 def header_mat_add_to_seq(self, context):
@@ -180,7 +186,6 @@ class SEQ_AS_PLANE_PT_panel(bpy.types.Panel):
         strip = context.active_sequence_strip
         if not strip:
             return False
-
         return strip.type == "MOVIE"
 
     def draw(self, context):
@@ -249,7 +254,7 @@ def register():
     )
     bpy.app.handlers.depsgraph_update_post.append(update_materials_via_sequence)
     bpy.types.WindowManager.auto_sync_materials_to_strips = bpy.props.BoolProperty(
-        name="Sync Material Strips", default=False
+        name="Auto Sync Material Strips", default=False
     )
     bpy.types.WindowManager.output_scene = bpy.props.PointerProperty(
         name="Scene",
