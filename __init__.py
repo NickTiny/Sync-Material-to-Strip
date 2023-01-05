@@ -16,7 +16,7 @@ bl_info = {
     "author": "Nick Alberelli",
     "description": "Creates Sequencer Strips that are linked to Image Texture nodes. Syncronize node in material with start frame from a Sequencer Strip.",
     "blender": (3, 3, 0),
-    "version": (0, 0, 1),
+    "version": (1, 0, 0),
     "category": "Video Tools",
 }
 
