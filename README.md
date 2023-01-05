@@ -3,7 +3,7 @@
 Synchronize Image Textures with Sequencer Strips to quickly adjust the start frame of Image Textures. This addon is for Blender 3.0+
 
 # Download
-Get latest release [here](https://github.com/NickTiny/Sync-Material-to-Strip/releases/download/v1.0.0/sync_material_to_strip_1_0_0.py)
+Get latest release [here](https://github.com/NickTiny/Sync-Material-to-Strip/releases/download/v1.0.1/sync_material_to_strip_1_0_1.py)
 
 # Usage
 https://user-images.githubusercontent.com/86638335/210847033-a512959b-d3f6-4b9c-bc32-198804d117e0.mp4
