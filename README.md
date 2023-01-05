@@ -24,4 +24,5 @@ Install [Import Image as Planes](https://docs.blender.org/manual/en/latest/addon
 Sync Material to Strip ONLY controls offsett/start frame of an image texture node. 
 This addon does NOT Support any other strip features like time remapping or video settings.
 
-
+# Credits
+Video featured in demo video is from the Blender Foundation
