@@ -222,11 +222,11 @@ class SEQ_AS_PLANE_settings(bpy.types.PropertyGroup):
         return None
 
     is_synced: bpy.props.BoolProperty(
-        name="is_synced",
+        name="Material Syncronized to Strip",
+        description="Clicking will sync Image Texure to Strip. Icon will display blue with Material is synced",
         get=check_sync_status,
         set=set_sync_status,
         options=set(),
-        description="",
     )
 
 
