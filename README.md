@@ -1,6 +1,6 @@
 # Sync Material to Strip
 
-Synchronize Image Textures with Sequencer Strips to quickly adjust the duration and start frame of Image Textures.
+Synchronize Image Textures with Sequencer Strips to quickly adjust the start frame of Image Textures.
 
 # Download
 Get latest release [here](https://github.com/NickTiny/Sync-Material-to-Strip/releases/download/v1.0.0/sync_material_to_strip_1_0_0.py)
