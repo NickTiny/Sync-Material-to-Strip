@@ -60,9 +60,15 @@ def create_sequence_from_image_node(
     strip = seq_editor.sequences.new_movie(
         node.image.name,
         node.image.filepath,
-        channel,
+        channel + 1,
         node.image_user.frame_start,
         fit_method="FILL",
+    )
+    sound_strip = seq_editor.sequences.new_sound(
+        node.image.name,
+        node.image.filepath,
+        channel,
+        node.image_user.frame_start,
     )
     strip.mat_sync.material = mat
     strip.mat_sync.node_name = node.name
@@ -127,7 +133,7 @@ class SEQ_AS_PLANE_OT_link(bpy.types.Operator):
             return {"CANCELLED"}
 
         for strip in seq_editor.sequences_all:
-            if strip.mat_sync.material == mat:
+            if strip.type == "MOVIE" and strip.mat_sync.material == mat:
                 self.report(
                     {"ERROR"},
                     f"Material already linked to Strip '{strip.name}'.",
