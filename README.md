@@ -8,7 +8,7 @@ Get latest release [here](https://github.com/NickTiny/Sync-Material-to-Strip/rel
 # Usage
 1. Create a Material with an Image Texure (Image as Planes or other)
 2. Navigate to **Properties > Materials Properties > Sync Material to Strip** 
-3. Click **Create Material to new Strip** and select a target scene for the new strip
+3. Click **Sync Material to new Strip** and select a target scene for the new strip
 4. To Automatially syncronize enable "**Auto Sync Material Strips**"
 5. To Manually Update inside the **Sequence Editor's Side Panel** navigate to **Strip > Sync Material** and select the Sync Button to update the material.
 
